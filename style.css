@@ -1,0 +1,81 @@
+/* Establece el estilo básico del documento */
+body {
+    /* define el estilo de letra en el documento */
+    font-family: sans-serif;
+
+    /* elimina la margen que viene por defecto en el documento */
+    margin: 0;
+
+    /* define el fondo del documento */
+    background: linear-gradient(to bottom right, #020024, #65a122, #b85030, #03181c); /* Degradado con los colores especificados */
+    height: 1000px;
+}
+
+/* Estilo para el contenedor principal que agrupa las tarjetas en el documento  */
+.contenedor {
+    /* toma modelo de caja flexible para alinear elementos */
+    display: flex;
+
+    /* Permite que los elementos se envuelvan en varias líneas si no cuenta con espacio suficiente */
+    flex-wrap: wrap;
+
+    /* Distribuye los elementos con espacio igual alrededor */
+    justify-content: space-around;
+    padding: 20px;
+    /* Agrega un relleno de (X) px alrededor del contenedor */
+
+
+    
+    
+}
+
+/* Estilo para cada tarjeta individual */
+.tarjeta {
+    /* Fija el ancho de cada tarjeta  */
+    width: 300px;
+
+    /* Agrega un margen de 10px alrededor de cada tarjeta */
+    margin: 10px;
+
+    /* Define un borde de de (X) px y un color ( X ) */
+    border: 1px solid #ccc;
+
+    /* Agrega un relleno interno dentro de la tarjeta */
+    padding: 20px;
+
+    /* Aplica bordes redondeados  */
+    border-radius: 5px;
+
+    /* Agrega una sombra sutil debajo de la tarjeta */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las imágenes dentro de las tarjetas */
+.tarjeta img {
+    /* Hace que la imagen ocupe el 100% del ancho de la tarjeta */
+    width: 100%;
+    
+    /* Mantiene la proporción de la imagen al redimensionarla */
+    height: auto;
+
+    /* Asegura que no haya espacio adicional debajo de la imagen */
+    display: block;
+
+    /* Aplica bordes redondeados solo en la parte superior de la imagen */
+    border-radius: 5px 5px 0 0;
+}
+
+/* Estilo para el título de las tarjetas */
+.tarjeta h3 {
+    /* Agrega un margen superior de ( x )px al título */
+    margin-top: 10px;
+}
+
+/* Estilo para el texto dentro de las tarjetas */
+.tarjeta p {
+    /* Establece un tamaño de fuente un poco más pequeño que el normal */
+    font-size: 0.9em;
+
+    /* Define la altura de línea para mejorar la lectura */
+    line-height: 1.5;
+}
